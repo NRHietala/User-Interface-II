@@ -54,7 +54,7 @@ html {
 }
 
 body {
-    background: url(https://background-tiles.com/overview/grey/patterns/large/1032.png)
+    background: url(https://background-tiles.com/overview/grey/patterns/large/1032.png);
 }
 
 .container {
@@ -64,6 +64,39 @@ body {
 }
 
 header {
+    display:flex;
+    justify-content: space-between;
+}
+
+.name h2 {
+    font-size: 4rem;
+    padding:10px 10px;
+    text-shadow: 2px 2px white;
+}
+
+nav {
+    display:flex;
+    justify-content:flex-end;
+}
+
+nav li {
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    list-style-type:none;
+    /* width: 10%; */
+    padding: 20px;
+    background-image: linear-gradient(gray,white); 
+    border: 1px black solid;
 
 }
 
+nav li a {
+    text-decoration: none;
+    color:white;
+    font-size: 3rem;
+}
+
+.jumbotron {
+    justify-content:center;
+}
