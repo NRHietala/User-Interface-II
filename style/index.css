@@ -123,11 +123,13 @@ h2 {
 }
 
 .jumbotext {
+    display:flex;
     text-align:center;
     position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
     z-index: 999;
-    /* margin-left: 28%;
-    margin-top: -50%; */
+    display:inline;
     background: rgba(189, 192, 191, 0.521);
     text-shadow: 2px 2px seashell;
     padding: 5px;
@@ -138,8 +140,8 @@ h2 {
 h1 {
     font-size: 8rem;
     text-align:center;
-    padding-bottom: 5px;
-    flex: 1 1;
+    padding-bottom: 10px;
+    flex: 0 0 100%;
     
 }
 
