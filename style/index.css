@@ -132,9 +132,17 @@ h2 {
     flex-wrap: wrap;
 }
 
-.gallery .imagebox p {
+.gallery .imagebox {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    flex: 1 1 30%;
+    align-items: space-between;
+}
+.gallery .imagebox img,p {
     text-align:center;
     font-size: 2rem;
+    flex: 1 1 25%;
 }
 
 .gallery img {
