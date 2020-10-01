@@ -122,7 +122,8 @@ h2 {
     justify-content: center;
     align-items:center;
     text-align:center;
-    background
+    width: 80%;
+    height: 600px;
 }
 
 .jumbotron img {
@@ -138,19 +139,20 @@ h2 {
     flex: 1 1 100%;
     /* z-index: 999; */
     display:inline;
-    position: absolute;
     background: rgba(189, 192, 191, 0.521);
     text-shadow: 2px 2px seashell;
     padding: 5px;
-    border: 4px solid black;
+    margin-top: 50px;
 }
 
 h1 {
+    color:black;
     font-size: 8rem;
     text-align:center;
-    padding-bottom: 10px;
-    flex: 1 1 25%;
-    
+    text-shadow: 2px 2px white;
+    margin-bottom: 75px;
+    background:rgba(226, 221, 221, 0.247);
+    flex-shrink: auto;
 }
 
 .bot-section {
@@ -224,6 +226,19 @@ a {
     color:royalblue;
 }  
 
+.hero {
+    width: 100%;
+    height: 100%;
+    background: url(https://previews.123rf.com/images/annbozhko/annbozhko1909/annbozhko190900002/129288951-hand-drawing-hipster-skull-with-hat-on-artistic-watercolor-background-hipster-fashion-style.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    
+
+}
 
 
 
