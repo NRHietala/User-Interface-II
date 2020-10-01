@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/* CSS Rest above */
+/* CSS Reset above */
 
 html {
     font-size: 10px;
@@ -59,8 +59,9 @@ body {
 
 .container {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    align-items:center;
 }
 
 header {
@@ -84,8 +85,7 @@ nav li {
     align-items: center;
     display:flex;
     list-style-type:none;
-    /* width: 10%; */
-    padding: 20px;
+    padding: 15px;
     background-image: linear-gradient(gray,white); 
     border: 1px black solid;
 
@@ -97,22 +97,15 @@ nav li a {
     font-size: 3rem;
 }
 
-.top-section {
-    /* width: 100%;
-    justify-content: center; */
-}
-
 .jumbotron {
     display:flex;
-    justify-content:center;
-    width:100%;
-    margin:20px auto;
-    
+    justify-content: center;
+    /* background-image: url("https://picsum.photos/200/300?grayscale"); */
+    background-repeat: no-repeat;
+    /* margin:auto; */
+    object-fit: cover;
 }
 
-.jumbotron img {
- 
-}
 
 
 
