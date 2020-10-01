@@ -86,6 +86,9 @@ nav li {
     align-items:center;
     flex: 1 1;
     padding: 5px 0;
+    list-style-type:none;
+    background-image: linear-gradient(gray,white); 
+    border: 1px black solid;
 }
 
 nav li a {
@@ -94,21 +97,6 @@ nav li a {
     font-size: 3rem;
 }
 
-
- /* header {
-    display:flex;
-    justify-content: space-between;
-    width: 100%;
-    margin:0 auto;
-}
-
-nav {
-    display:flex;
-    height: 50px;
-    justify-content: flex-end;
-    /* width: 90%; 
-}
-*/
 h2 {
     flex: 1 1 100px;
     font-size: 4rem;
@@ -116,32 +104,43 @@ h2 {
     text-shadow: 2px 2px white;
 }
 
-nav {
+.top-section {
     display:flex;
-    justify-content:flex-end;
+    justify-content: center;
+    padding: 20px;
 }
-
-nav li {
-    list-style-type:none;
-    background-image: linear-gradient(gray,white); 
-    border: 1px black solid;
-    
-}
-
-nav li a {
-    
-}
-
 
 .jumbotron {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    flex: 1 1;
+}
 
-    max-width: 600px;
-    max-height: 00px;
-    box-shadow: 0px 0px 10px 2px grey;
-    background-image: url(https://previews.123rf.com/images/annbozhko/annbozhko1909/annbozhko190900002/129288951-hand-drawing-hipster-skull-with-hat-on-artistic-watercolor-background-hipster-fashion-style.jpg);
-    background-repeat:no-repeat;
-    background-size:contain; 
-} */
+.jumbrotron h1 {
+    position:relative;
+}
+
+.bot-section {
+    display:flex;
+    justify-content: center;
+}
+
+.bot-section .gallery {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .imagebox p {
+    text-align:center;
+    font-size: 2rem;
+}
+
+.gallery img {
+    flex: 1 1 30%;
+    padding: 10px;
+}
     
     
 
