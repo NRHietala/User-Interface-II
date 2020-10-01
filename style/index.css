@@ -134,6 +134,7 @@ h2 {
     justify-content: center;
     /* flex-wrap: wrap; */
     text-align:center;
+    align-self: center;
     flex: 1 1 100%;
     /* z-index: 999; */
     display:inline;
