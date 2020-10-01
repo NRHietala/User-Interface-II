@@ -111,21 +111,33 @@ h2 {
 }
 
 .jumbotron {
-    display:flex;
+    /* display:flex;
     flex-direction: column;
     align-items:center;
-    flex: 1 1 60%;
+    flex: 1 1 60%; */
+    position:relative;
+    margin:auto;
+    display:inline-block;
+    text-align:center;
 }
 
 .jumbotext {
     text-align:center;
-    position:relative;
-    margin-bottom: 50px;
+    position:absolute;
+    z-index: 999;
+    margin-left: 28%;
+    margin-top: -50%;
+    background: rgba(189, 192, 191, 0.521);
+    text-shadow: 2px 2px seashell;
+    padding: 5px;
+    
 }
 
 h1 {
-    position:relative;
-    font-size: 6rem;
+    font-size: 8rem;
+    text-align:center;
+    padding-bottom: 5px;
+    
 }
 
 .bot-section {
@@ -175,6 +187,7 @@ footer {
     text-align: center;
     color:white;
     border: 3px solid rgb(65, 65, 65);
+    box-shadow: 1px 1px seashell;
 }
 
 /* footer a {
