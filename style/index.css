@@ -59,9 +59,9 @@ body {
 
 .container {
     width: 100%;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
-    align-items:center;
+    height: 100vh;
 }
 
 header {
@@ -69,7 +69,48 @@ header {
     justify-content: space-between;
 }
 
-.name h2 {
+nav {
+    display:flex;
+    width: 40%;
+}
+nav ul {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex: 1 1;
+}
+
+nav li {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex: 1 1;
+    padding: 5px 0;
+}
+
+nav li a {
+    text-decoration: none;
+    color:white;
+    font-size: 3rem;
+}
+
+
+ /* header {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    margin:0 auto;
+}
+
+nav {
+    display:flex;
+    height: 50px;
+    justify-content: flex-end;
+    /* width: 90%; 
+}
+*/
+h2 {
+    flex: 1 1 100px;
     font-size: 4rem;
     padding:10px 10px;
     text-shadow: 2px 2px white;
@@ -81,30 +122,31 @@ nav {
 }
 
 nav li {
-    justify-content: center;
-    align-items: center;
-    display:flex;
     list-style-type:none;
-    padding: 15px;
     background-image: linear-gradient(gray,white); 
     border: 1px black solid;
-
+    
 }
 
 nav li a {
-    text-decoration: none;
-    color:white;
-    font-size: 3rem;
+    
 }
 
+
 .jumbotron {
-    display:flex;
-    justify-content: center;
-    /* background-image: url("https://picsum.photos/200/300?grayscale"); */
-    background-repeat: no-repeat;
-    /* margin:auto; */
-    object-fit: cover;
-}
+
+    max-width: 600px;
+    max-height: 00px;
+    box-shadow: 0px 0px 10px 2px grey;
+    background-image: url(https://previews.123rf.com/images/annbozhko/annbozhko1909/annbozhko190900002/129288951-hand-drawing-hipster-skull-with-hat-on-artistic-watercolor-background-hipster-fashion-style.jpg);
+    background-repeat:no-repeat;
+    background-size:contain; 
+} */
+    
+    
+
+
+
 
 
 
