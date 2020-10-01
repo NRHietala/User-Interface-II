@@ -115,10 +115,12 @@ h2 {
     flex-direction: column;
     align-items:center;
     flex: 1 1;
+    
 }
 
 .jumbrotron h1 {
     position:relative;
+    font-size:6rem;
 }
 
 .bot-section {
@@ -130,26 +132,61 @@ h2 {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-content: space-between;
 }
 
 .gallery .imagebox {
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
-    flex: 1 1 30%;
+    flex: 1 1 33.333%;
     align-items: space-between;
+    
 }
 .gallery .imagebox img,p {
     text-align:center;
-    font-size: 2rem;
-    flex: 1 1 25%;
+    font-size: 2.5rem;
+    flex: 1 1 33.333%;
 }
 
 .gallery img {
-    flex: 1 1 30%;
+    flex: 1 1 33.333%;
     padding: 10px;
 }
-    
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: darkgray;
+    height: 150px;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+.btn {
+    background: black;
+    padding: 10px;
+    text-align: center;
+    color:white;
+}
+
+/* footer a {
+    text-decoration: none;
+    background: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+} */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: lightblue;
+    border-radius: 50%;
     
 
 
