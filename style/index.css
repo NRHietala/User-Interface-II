@@ -1,1 +1,307 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Reset above */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url(https://background-tiles.com/overview/grey/patterns/large/1032.png);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+}
+
+nav {
+    display:flex;
+    width: 50%;
+}
+nav ul {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex:1;
+}
+
+nav li {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex: 1 1;
+    padding: 1%;
+    list-style-type:none;
+    background-image: linear-gradient(gray,white); 
+    border: 1px black solid;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+nav li:first-of-type {
+    background:black;
+    color:white;
+}
+
+nav li a {
+    font-size: 3rem;
+}
+
+h2 {
+    width:50%;
+    font-size: 4.5rem;
+    padding:1%;
+    text-shadow: 2px 2px white;
+    font-weight: 500;
+    display:inline;
+    flex: 1 1 20%;
+}
+
+.top-section {
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    margin: 5% 0;
+}
+
+.jumbotron {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    width: 80%;
+    min-width: 30%;
+    height: 600px; /* height issue*/
+    flex: 1 1;
+}
+
+.hero {
+    width: 80%;
+    height: 100%;
+    min-width:300px;
+    background: url(https://previews.123rf.com/images/annbozhko/annbozhko1909/annbozhko190900002/129288951-hand-drawing-hipster-skull-with-hat-on-artistic-watercolor-background-hipster-fashion-style.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.jumbotext{
+    display:flex;
+    justify-content: center;
+    text-align:center;
+    align-self: center;
+    flex: 1 1 100%;
+    background: rgba(189, 192, 191, 0.521);
+    text-shadow: 2px 2px seashell;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+h1 {
+    color:black;
+    font-size: 8rem;
+    text-align:center;
+    text-shadow: 2px 2px white;
+    margin-bottom: 15%;
+    background:rgba(226, 221, 221, 0.247);
+}
+
+.bot-section {
+    display:flex;
+    justify-content: center;
+}
+
+.bot-section .gallery {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 5% 0;
+}
+
+.gallery .imagebox {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    flex: 1 1 33.333%;
+    align-items: space-between;
+    margin-bottom:3%;
+    
+}
+
+.gallery .imagebox img,p {
+    text-align:center;
+    font-size: 2.5rem;
+    flex: 1 1 33.333%;
+}
+
+.gallery img {
+    flex: 1 1 33.333%;
+    padding: 2%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: darkgray;
+    max-height: 1%;
+    padding: 2%;
+}
+
+.btn {
+    background: black;
+    padding: 1%;
+    text-align: center;
+    color:white;
+    border: 3px solid rgb(65, 65, 65);
+    box-shadow: 1px 1px seashell;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: rgb(65, 65, 65);
+    border-radius: 50%;
+    color:royalblue;
+}  
+
+/* ----- Pseudo Selectors ----- */
+
+nav li a:hover {
+    color:blueviolet;
+}
+
+
+.btn:hover {
+    border: 2px solid white;
+    box-shadow: 1px 1px black;
+}
+
+
+.fa:hover {
+    border: 2px solid white;
+}
+
+
+
+@media (max-width:800px) {
+
+    header {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        display:block;
+        width: 100%;
+        text-align:center;
+    }
+
+    nav {
+        display:block;
+        width: 70%;
+
+    }
+}
+
+@media (max-width:500px) {
+
+    header {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    nav ul {
+        display:flex;
+        flex-direction:column;
+        margin-bottom: -5%;
+    }
+
+    nav li {
+        width:100%;
+    }
+
+    .jumbotron {
+        height: 400px;
+    }
+}
+
+
+
+
+
