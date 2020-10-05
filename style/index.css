@@ -71,13 +71,13 @@ header {
 
 nav {
     display:flex;
-    width: 40%;
+    width: 50%;
 }
 nav ul {
     display:flex;
     justify-content: center;
     align-items:center;
-    flex: 1 1;
+    flex:1;
 }
 
 nav li {
@@ -91,20 +91,29 @@ nav li {
     border: 1px black solid;
 }
 
-nav li:first-child {
+a {
+    text-decoration: none;
+    color:white;
+}
+
+nav li:first-of-type {
     background:black;
+    color:white;
+}
+
+nav li:nth-of-type(2) {
+    color:black;
 }
 
 nav li a {
-    text-decoration: none;
-    color:white;
     font-size: 3rem;
 }
 
 h2 {
+    width:50%;
     flex: 1 1 100px;
     font-size: 4.5rem;
-    padding:10px 10px;
+    padding:10px;
     text-shadow: 2px 2px white;
     font-weight: 500;
     display:inline;
@@ -114,7 +123,6 @@ h2 {
 .top-section {
     display:flex;
     justify-content: center;
-    padding: 20px;
 }
 
 .jumbotron {
@@ -123,21 +131,30 @@ h2 {
     align-items:center;
     text-align:center;
     width: 80%;
+    min-width: 300px;
     height: 600px;
+    flex: 1 1;
 }
 
-.jumbotron img {
-    box-shadow: 3px 3px rgb(92, 92, 92);
+.hero {
+    width: 100%;
+    height: 100%;
+    min-width:300px;
+    background: url(https://previews.123rf.com/images/annbozhko/annbozhko1909/annbozhko190900002/129288951-hand-drawing-hipster-skull-with-hat-on-artistic-watercolor-background-hipster-fashion-style.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
 }
 
 .jumbotext{
     display:flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
     text-align:center;
     align-self: center;
     flex: 1 1 100%;
-    /* z-index: 999; */
     display:inline;
     background: rgba(189, 192, 191, 0.521);
     text-shadow: 2px 2px seashell;
@@ -150,9 +167,8 @@ h1 {
     font-size: 8rem;
     text-align:center;
     text-shadow: 2px 2px white;
-    margin-bottom: 75px;
+    margin-bottom: 15%;
     background:rgba(226, 221, 221, 0.247);
-    flex-shrink: auto;
 }
 
 .bot-section {
@@ -165,6 +181,7 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     align-content: space-between;
+    padding: 5% 0;
 }
 
 .gallery .imagebox {
@@ -173,6 +190,7 @@ h1 {
     flex-wrap: wrap;
     flex: 1 1 33.333%;
     align-items: space-between;
+    margin-bottom:3%;
     
 }
 
@@ -192,9 +210,8 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     background: darkgray;
-    height: 120px;
-    padding: 50px;
-    margin-top: 30px;
+    height: 10%;
+    padding: 5%;
 }
 
 .btn {
@@ -208,12 +225,6 @@ footer {
     text-decoration: none;
 }
 
-a {
-    text-decoration: none;
-    color:white;
-}
-
-
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -226,21 +237,71 @@ a {
     color:royalblue;
 }  
 
-.hero {
-    width: 100%;
-    height: 100%;
-    background: url(https://previews.123rf.com/images/annbozhko/annbozhko1909/annbozhko190900002/129288951-hand-drawing-hipster-skull-with-hat-on-artistic-watercolor-background-hipster-fashion-style.jpg) no-repeat;
-    background-size: 100%;
-    background-position: center;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
-    
+/* ----- Pseudo Selectors ----- */
 
+nav li a:hover {
+    color:blueviolet;
 }
 
 
+.btn:hover {
+    border: 2px solid white;
+    box-shadow: 1px 1px black;
+}
+
+
+.fa:hover {
+    border: 2px solid white;
+}
+
+
+
+@media (max-width:800px) {
+
+    header {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        display:block;
+        width: 100%;
+        text-align:center;
+    }
+
+    nav {
+        display:block;
+        width: 70%;
+
+    }
+}
+
+@media (max-width:500px) {
+
+    header {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    nav ul {
+        display:flex;
+        flex-direction:column;
+        margin-bottom: -5%;
+    }
+
+    nav li {
+        width:100%;
+    }
+
+}
 
 
 
